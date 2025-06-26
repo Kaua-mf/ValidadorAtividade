@@ -18,6 +18,7 @@ public class GeradorParecer {
             Requerimento req = requerimentos.get(i);
             totalHorasDeclaradas += req.getValorDeclarado();
             totalHorasValidadas += req.getHorasValidadas();
+            ///feeee
 
             IValidacaoStrategy estrategia = req.getAtividade().getEstrategiaValidacao();
 
