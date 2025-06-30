@@ -1,4 +1,4 @@
-package br.edu.ifsc.sistema.validadoratividades;
+package br.edu.ifsc.validador.strategy;
 
 public class ValidacaoValorFixoStrategy implements IValidacaoStrategy {
     private final int horasFixas;

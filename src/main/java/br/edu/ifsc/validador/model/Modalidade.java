@@ -1,6 +1,6 @@
-package br.edu.ifsc.sistema.validadoratividades;
+package br.edu.ifsc.validador.model;
 
-import java.util.List;
+import java.util.List; 
 
 public class Modalidade {
     private final String nome;

@@ -1,5 +1,8 @@
-package br.edu.ifsc.sistema.validadoratividades;
+package br.edu.ifsc.validador.service;
 
+import br.edu.ifsc.validador.model.Requerimento;
+import br.edu.ifsc.validador.strategy.IValidacaoStrategy; 
+import br.edu.ifsc.validador.strategy.ValidacaoLimiteSimplesStrategy; 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -18,7 +21,6 @@ public class GeradorParecer {
             Requerimento req = requerimentos.get(i);
             totalHorasDeclaradas += req.getValorDeclarado();
             totalHorasValidadas += req.getHorasValidadas();
-            ///feeee
 
             IValidacaoStrategy estrategia = req.getAtividade().getEstrategiaValidacao();
 
@@ -28,7 +30,7 @@ public class GeradorParecer {
 
             if (estrategia instanceof ValidacaoLimiteSimplesStrategy) {
                 String[] partes = estrategia.getDescricaoRegra().split(" ");
-                String limite = partes[partes.length - 2]; 
+                String limite = partes[partes.length - 2];
                 parecer.append(String.format("  Limite Maximo:    %sh\n", limite));
             }
 

@@ -1,5 +1,10 @@
-package br.edu.ifsc.sistema.validadoratividades;
+package br.edu.ifsc.validador.controller;
 
+import br.edu.ifsc.validador.model.Atividade;
+import br.edu.ifsc.validador.model.Modalidade; 
+import br.edu.ifsc.validador.model.Requerimento; 
+import br.edu.ifsc.validador.service.GeradorParecer; 
+import br.edu.ifsc.validador.service.RegrasDeNegocioService; 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -26,7 +31,7 @@ public class SistemaController {
             exibirMenuModalidades();
             int escolhaModalidade = lerInteiro();
             
-            if (escolhaModalidade == -1) continue; 
+            if (escolhaModalidade == -1) continue;
 
             if (escolhaModalidade == 0) {
                 break loopPrincipal;
@@ -65,7 +70,7 @@ public class SistemaController {
             System.out.print("Escolha a atividade (0-voltar): ");
             int escolhaAtividade = lerInteiro();
 
-            if (escolhaAtividade == -1) continue; 
+            if (escolhaAtividade == -1) continue;
             if (escolhaAtividade == 0) break;
 
             Atividade atividadeEscolhida = modalidade.getAtividadePorIndice(escolhaAtividade - 1);
@@ -77,7 +82,7 @@ public class SistemaController {
                     System.out.println("Atividade adicionada ao requerimento.");
                 }
             } else {
-                System.out.println("Opção invalida.");
+                System.out.println("Opcao invalida.");
             }
         }
     }

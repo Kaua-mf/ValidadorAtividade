@@ -1,4 +1,4 @@
-package br.edu.ifsc.sistema.validadoratividades;
+package br.edu.ifsc.validador.strategy;
 
 public class ValidacaoLimiteSimplesStrategy implements IValidacaoStrategy {
     private final int limiteHoras;

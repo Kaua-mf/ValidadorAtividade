@@ -1,4 +1,6 @@
-package br.edu.ifsc.sistema.validadoratividades;
+package br.edu.ifsc.validador.model;
+
+import br.edu.ifsc.validador.strategy.IValidacaoStrategy;
 
 public class Atividade {
     private final String descricao;
