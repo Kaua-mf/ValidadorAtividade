@@ -24,7 +24,8 @@ O sistema foi projetado com foco na separação de responsabilidades, flexibilid
 
 O diagrama a seguir ilustra as principais classes do sistema e como elas se relacionam.
 
-![Diagrama UML do Projeto](https://i.imgur.com/u7q7FqG.png)
+![mermaid-diagram-2025-06-30-142628](https://github.com/user-attachments/assets/2d8b6540-2010-47ab-b588-9fd276964d2f)
+
 
 **Descrição das Relações:**
 -   `Main`: Apenas inicia a aplicação, instanciando o `SistemaController`.
