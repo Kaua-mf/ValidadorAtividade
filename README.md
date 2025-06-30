@@ -1,8 +1,8 @@
 # Validador de Atividades Complementares
-
 ![Java](https://img.shields.io/badge/Java-17%2B-blue?style=for-the-badge&logo=java)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
+IFSC 3 fase, INTEGRANTES DO PROJETO: Kauã machado, Murilo possamai, Gabriel lucas da conceição lima
 ## 1. Apresentação do Projeto
 
 Este projeto consiste em um sistema de console em Java desenvolvido para realizar a avaliação automatizada de requerimentos de validação de **Atividades Complementares**. O software foi baseado nas regras e critérios do Instituto Federal de Santa Catarina – Câmpus Tubarão, simulando um ambiente real de análise de horas.
