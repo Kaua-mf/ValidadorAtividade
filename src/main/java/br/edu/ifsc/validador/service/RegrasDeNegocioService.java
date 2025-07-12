@@ -26,7 +26,7 @@ public class RegrasDeNegocioService {
             )),
             new Modalidade("Extensao", List.of(
                 new Atividade("Curso de extensao oferecido", new ValidacaoLimiteSimplesStrategy(30)),
-                new Atividade("Organização de evento", new ValidacaoLimiteSimplesStrategy(15))
+                new Atividade("Organizacao de evento", new ValidacaoLimiteSimplesStrategy(15))
             ))
         );
     }
